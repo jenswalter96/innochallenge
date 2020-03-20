@@ -4,27 +4,243 @@
 <head>
     <meta charset="utf-8">
     <title></title>
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author"
+          content="">
+    <meta name="description"
+          content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+    <link rel="stylesheet"
+          href="css/style.css">
 </head>
 
 <body>
 
-<div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="d-flex w-100 h-100 mx-auto flex-column">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
+            <div class="container">
+                <a href="#"
+                   class="navbar-brand text-uppercase font-weight-bold">Logo</a>
+                <!--
+                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+                <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Home <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Gallery</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Contact</a></li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </nav>
+        <div class="jumbotron " style="padding-top: 6rem">
+            <h1 class="display-4 text-center font-weight-bold">Unterstütze Deine
+                Clubs</h1>
+            <h1 class="display-4 text-center font-weight-bold">in der Krise</h1>
+            <h6 class="text-center" style="padding: 3rem; width: 50%;margin: auto">Eigentlich wärst du ja jetzt gerade
+                auf Tour
+                durch deine Clubs Sorge mit deinem Trinkgeld dafür, dass dein
+                Clubs auch nach der Krise noch da sind</h6>
+        </div>
+    </header>
+
+    <main>
+        <section style="padding: 4rem 0;margin-top: -6rem">
+            <div class="d-flex justify-content-center">
+                <div id="mapid"
+                     style="width: 600px; height: 400px;"></div>
+            </div>
+        </section>
+
+        <section style="background-color: lightgray; padding-bottom: 8rem">
+            <div class="container">
+                <h3 class="text-center font-weight-bold" style="padding: 2rem">So funktioniert's</h3>
+                <!-- Three columns of text below the carousel -->
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <svg class="bd-placeholder-img rounded-circle"
+                             width="140"
+                             height="140"
+                             xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice"
+                             focusable="false"
+                             role="img"
+                             aria-label="Placeholder: 140x140"><title>
+                            Placeholder</title>
+                            <rect width="100%"
+                                  height="100%"
+                                  fill="#777"/>
+                            <text x="50%"
+                                  y="50%"
+                                  fill="#777"
+                                  dy=".3em">140x140
+                            </text>
+                        </svg>
+                        <h4 style="padding-top: 1rem">Club auswählen</h4>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 text-center">
+                        <svg class="bd-placeholder-img rounded-circle"
+                             width="140"
+                             height="140"
+                             xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice"
+                             focusable="false"
+                             role="img"
+                             aria-label="Placeholder: 140x140"><title>
+                            Placeholder</title>
+                            <rect width="100%"
+                                  height="100%"
+                                  fill="#777"/>
+                            <text x="50%"
+                                  y="50%"
+                                  fill="#777"
+                                  dy=".3em">140x140
+                            </text>
+                        </svg>
+                        <h4 style="padding-top: 1rem">Trinkgeldbetrag<br> eingeben</h4>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 text-center">
+                        <svg class="bd-placeholder-img rounded-circle"
+                             width="140"
+                             height="140"
+                             xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid slice"
+                             focusable="false"
+                             role="img"
+                             aria-label="Placeholder: 140x140"><title>
+                            Placeholder</title>
+                            <rect width="100%"
+                                  height="100%"
+                                  fill="#777"/>
+                            <text x="50%"
+                                  y="50%"
+                                  fill="#777"
+                                  dy=".3em">140x140
+                            </text>
+                        </svg>
+                        <h4 style="padding-top: 1rem">Paypal<br> spenden</h4>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>
+        </section>
+
+        <section>
+            <div class="container" style="padding: 3rem">
+                <div class="row">
+                    <div class="col-lg-12 text-center" style="padding: 2rem">
+                        <h3 class="text-center font-weight-bold">Warum ist es
+                            nötig</h3>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-12 text-center" style="padding-bottom: 6rem">
+                        It is a long established fact that a reader will be
+                        distracted by the readable content of a page when
+                        looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of
+                        letters, as opposed to using 'Content here, content
+                        here', making it look like readable English. Many
+                        desktop publishing packages and web page editors now use
+                        Lorem Ipsum as their default model text, and a search
+                        for 'lorem ipsum' will uncover many web sites still in
+                        their infancy. Various versions have evolved over the
+                        years, sometimes by accident, sometimes on purpose
+                        (injected humour and the like).
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navbar navbar-expand-lg fixed-bottom py-3" style="background-color: lightgray">
+            <div class="container">
+                <a href="#"
+                   class="navbar-brand text-uppercase font-weight-bold">Logo</a>
+                <div id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li
+                                class="nav-item"><a href="#" class="nav-link text-uppercase font-weight-bold">Impressum
+                        </a></li>
+                        <li
+                                class="nav-item"><a href="#"
+                                                    class="nav-link text-uppercase font-weight-bold">Datenschutz
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    L.marker([51.5, -0.09]).addTo(mymap)
+        .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
+
+    L.circle([51.508, -0.11], 500, {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5
+    }).addTo(mymap).bindPopup("I am a circle.");
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
+
+</script>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

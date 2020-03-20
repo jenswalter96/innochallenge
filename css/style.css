@@ -1,0 +1,14 @@
+header {
+    background-color: lightgray;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+#mapid { height: 180px; }
+
+.nav-link {
+    color: black;
+    font-size: 0.6rem;
+}
