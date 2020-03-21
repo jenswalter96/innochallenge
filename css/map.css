@@ -1,0 +1,66 @@
+.mapContainer {
+    display: flex;
+    height: 650px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.mapSideBar {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 50px 0 0;
+}
+
+.map {
+    flex: 1;
+}
+
+.searchInputContainer {
+    width: 85%;
+    height: 50px;
+    margin: 0 auto 50px;
+}
+
+.searchInput {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.storeList {
+    flex: 1;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.store {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 0 7.5%;
+}
+
+.storeImage {
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+    border-radius: 50px;
+}
+
+.storeInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80%;
+}
+
+.storeName {
+    font-weight: bold;
+    color: #000000;
+}
+
+.storeLocation {
+    display: flex;
+    flex-direction: column;
+}
