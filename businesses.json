@@ -1,0 +1,27 @@
+{
+    "businesses": [
+      {
+        "name": "SUESSHOLZ",
+        "zip": "70182",
+        "city": "Stuttgart",
+        "address": "Wilhelmspl. 3",
+        "lat": 48.7717386,
+        "lon": 9.1786396,
+        "paypalMeName": "suessholzstgt",
+        "tel": "0711 16917457",
+        "web": "https://www.schraeglage.tv/locations/",
+        "useThisIframeURLinstead": null
+      },
+      {
+        "name": "Bar Romantica",
+        "zip": "70173",
+        "city": "Stuttgart",
+        "address": "Hauptstätter Str. 40",
+        "lat": 48.7717386,
+        "lon": 9.1786396,
+        "tel": "0711 23456778",
+        "paypalMeName": "https://www.facebook.com/RomanticaStuttgart",
+        "useThisIframeURLinstead": null
+      }
+    ]
+  }
