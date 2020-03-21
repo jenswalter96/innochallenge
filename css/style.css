@@ -78,13 +78,25 @@ section.inno-section {
 
 
 .inno-footer {
-    margin-bottom: 3rem;
+    background-color: #F8F8F8;
+    padding: 2.5rem;
 }
-.inno-footer .navbar-brand{
-    font-size: 1.5rem;
-    color: black;
-    line-height: 21px;
+
+.inno-footer .footer-link {
+    color: #021235;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'Montserrat';
+}
+
+.inno-footer .footer-logo-wrapper {
+    height: 3.5rem;
+    margin: 0 5rem;
+}
+
+.inno-footer .footer-logo-wrapper img{
+    height: 100%;
+    width: auto;
 }
 
 .nav-link {
