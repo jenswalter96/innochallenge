@@ -22,8 +22,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="css/style.css">
 </head>
@@ -31,11 +30,11 @@
 <body>
 
 <div class="d-flex w-100 h-100 mx-auto flex-column">
-    <header class="header">
+    <header class="inno-header bg-1">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container">
                 <a href="#"
-                   class="navbar-brand text-uppercase font-weight-bold">Logo</a>
+                   class="navbar-brand text-uppercase font-weight-bold text-white">Local Support</a>
                 <!--
                 <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -51,24 +50,32 @@
             </div>
         </nav>
         <div class="jumbotron">
-            <h1 class="display-4 text-center font-weight-bold text-white jumbotron-title">DU FÜR DEINE
-                CLUBS <br>IN
-                STUTTGART</h1>
+            <div class="container">
+                <h1 class="display-4 text-center font-weight-bold text-white header-title">DU FÜR DEINE
+                    CLUBS <br>IN
+                    STUTTGART</h1>
+                <div class="d-flex justify-content-center jumbotron-button-wrapper">
+                    <button type="button" class="btn btn-primary font-montserrat">jetzt
+                        unterstützen</button>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section style="padding: 4rem 0;margin-top: -6rem">
+        <section class="inno-section">
+
+        </section>
+        <section class="inno-section">
             <div class="d-flex justify-content-center">
                 <div id="mapid"
                      style="width: 600px; height: 400px;"></div>
             </div>
         </section>
 
-        <section style="background-color: lightgray; padding-bottom: 8rem">
+        <section class="inno-section">
             <div class="container">
-                <h3 class="text-center font-weight-bold"
-                    style="padding: 2rem">So funktioniert's</h3>
+                <h3 class="text-center font-weight-bold mt-5 mb-5">So unterstützt Du dein Lieblingslokal</h3>
                 <!-- Three columns of text below the carousel -->
                 <div class="row">
                     <div class="col-lg-4 text-center">
@@ -90,7 +97,12 @@
                                   dy=".3em">140x140
                             </text>
                         </svg>
-                        <h4 style="padding-top: 1rem">Club auswählen</h4>
+                        <h6 class="pt-4 pb-4 font-montserrat font-weight-bold">Lieblingslokal auswählen</h6>
+                        <p class="font-montserrat w-75 m-auto">Links über das Sucheingabefeld einen Eintrag auswählen
+                            oder in
+                            der Karte darauf
+                            klicken
+                            .</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 text-center">
                         <svg class="bd-placeholder-img rounded-circle"
@@ -111,7 +123,8 @@
                                   dy=".3em">140x140
                             </text>
                         </svg>
-                        <h4 style="padding-top: 1rem">Trinkgeldbetrag<br> eingeben</h4>
+                        <h6 class="pt-4 pb-4 font-montserrat font-weight-bold">Über Paypal Geld senden</h6>
+                        <p class="font-montserrat w-75 m-auto">Im der sich öffnenden Kachel den gewünschten Betrag auswählen und auf SPENDEN klicken. Bei Paypal einloggen und bezahlen.</p>
                     </div><!-- /.col-lg-4 -->
                     <div class="col-lg-4 text-center">
                         <svg class="bd-placeholder-img rounded-circle"
@@ -132,44 +145,30 @@
                                   dy=".3em">140x140
                             </text>
                         </svg>
-                        <h4 style="padding-top: 1rem">Paypal<br> spenden</h4>
+                        <h6 class="pt-4 pb-4 font-montserrat font-weight-bold">Dein Lokal glücklich machen</h6>
+                        <p class="font-montserrat w-75 m-auto">Dein auswähltes Lokal, Café oder Bar erhält von deine Spende, um in dieser Zeit ohne Umsatz die Einbußen aufzufangen.</p>
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
             </div>
         </section>
 
-        <section id="map">
-            <div class="container"
-                 style="padding: 3rem">
-                <div class="row">
-                    <div class="col-lg-12 text-center"
-                         style="padding: 2rem">
-                        <h3 class="text-center font-weight-bold">Warum ist es
-                            nötig</h3>
-                    </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-12 text-center"
-                         style="padding-bottom: 6rem">
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is
-                        that it has a more-or-less normal distribution of
-                        letters, as opposed to using 'Content here, content
-                        here', making it look like readable English. Many
-                        desktop publishing packages and web page editors now use
-                        Lorem Ipsum as their default model text, and a search
-                        for 'lorem ipsum' will uncover many web sites still in
-                        their infancy. Various versions have evolved over the
-                        years, sometimes by accident, sometimes on purpose
-                        (injected humour and the like).
+        <section class="inno-section">
+            <div class="jumbotron bg-1 bg-overlay-5">
+                <div class="container">
+                    <h1 class="text-center font-weight-bold text-white section-title">WARUM DIE LAGE SO ERNST
+                        IST</h1>
+                    <div class="d-flex justify-content-center mt-5 mb-5 ml-auto mr-auto">
+                        <p class="w-75 font-montserrat section-description text-white text-center pt-4">
+                            Hier ist Platz für ein Text für die Mission. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <nav class="navbar navbar-expand-lg py-3"
-             style="background-color: lightgray">
+    <footer class="inno-footer">
+        <nav class="navbar navbar-expand-lg py-3">
             <div class="container">
                 <a href="#"
                    class="navbar-brand text-uppercase font-weight-bold">Logo</a>
