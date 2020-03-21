@@ -1,0 +1,150 @@
+#image {
+    width: 320px;
+    height: 120px;
+}
+
+
+#PopupContainer {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 380px;
+    
+    margin: 100px;
+    box-shadow: 0 0 2rem gray;
+}
+
+#shopContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#shopName {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0.2px solid rgb(221, 221, 221);
+    width: 100%;               
+}
+
+#shopName {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#address {
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+}
+
+#betrag {
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#SpendenContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 10px;
+}
+
+
+#SpendenBetraegeContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.betragButton {
+    width: 60px;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    background-color: white;
+    color: black;
+    border: none;
+    background: white;
+    box-shadow: 0 0 0.3rem gray;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.betragButton:hover {
+    color: white;
+    border: none;
+    background: rgb(35,70,239);
+    box-shadow: 0 0 0.3rem gray;
+    cursor: pointer;
+}
+.betragButton:focus {
+    color: white;
+    border: none;
+    background: rgb(35,70,239);
+    box-shadow: 0 0 0.3rem gray;
+    cursor: pointer;
+}
+
+.betragTextfield {
+    width: 60px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    background-color: white;
+    color: black;
+    border: none;
+    background: white;
+    box-shadow: 0 0 0.3rem gray;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.betragTextfield:focus{
+    border-color: rgb(35,70,239);
+    background-color: rgba(35, 69, 239, 0.233);
+    
+}
+.betragTextfield::placeholder {
+    color: rgb(161, 161, 161);
+  
+}
+
+
+#SpendenButtonContainer{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+#spendenButton {
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    font-weight: bold;
+    background-color: white;
+    color: white;
+    border: none;
+    background: rgb(35,70,239);
+    box-shadow: 0 0 0.3rem gray;
+    width: 100%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.euroZeichen {
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    align-self: center;
+    
+}
