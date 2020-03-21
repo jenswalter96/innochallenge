@@ -1,9 +1,21 @@
 header {
-    background-color: lightgray;
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
 }
 
 .jumbotron {
+    padding-top: 15%;
     background-color: transparent;
+}
+
+.jumbotron .jumbotron-title {
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: 'Oswald';
 }
 
 #mapid { height: 180px; }
