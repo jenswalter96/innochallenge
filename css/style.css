@@ -1,24 +1,91 @@
-header {
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
+.font-montserrat {
+    font-family: 'Montserrat';
+}
+
+.font-oswald {
+    font-family: 'Oswald';
+}
+
+.inno-header .navbar-brand {
+    font-size: 1rem;
+}
+
+section.inno-section {
+    margin: 5rem auto 0 auto;
 }
 
 .jumbotron {
-    padding-top: 15%;
     background-color: transparent;
 }
 
-.jumbotron .jumbotron-title {
-    font-size: 5rem;
+.jumbotron .header-title {
+    padding-top: 6rem;
+    font-size: 6rem;
     line-height: 6rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     font-family: 'Oswald';
 }
 
-#mapid { height: 180px; }
+.jumbotron .section-title {
+    font-size: 3rem;
+    padding-top: 6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+}
+
+.jumbotron .section-description {
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
+
+.jumbotron .jumbotron-button-wrapper {
+    height: 3.5rem;
+    margin: 4rem auto;
+    line-height: 21px;
+}
+
+.jumbotron .jumbotron-button-wrapper button {
+    border: none;
+    border-radius: 0;
+    background-color: #253BF8;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.bg-1 {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+}
+
+.bg-1.bg-overlay-5 {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+
+.inno-footer {
+    margin-bottom: 3rem;
+}
+.inno-footer .navbar-brand{
+    font-size: 1.5rem;
+    color: black;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+}
 
 .nav-link {
     color: black;
