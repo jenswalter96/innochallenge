@@ -1,4 +1,4 @@
-fetch('../businesses.json')
+fetch('../data/businesses.json')
   .then(
     function(response) {
       if (response.status !== 200) {
